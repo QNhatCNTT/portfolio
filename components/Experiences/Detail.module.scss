@@ -1,0 +1,40 @@
+@import "@/assets/styles/global.scss";
+
+.detailContainer {
+    width: 100%;
+    padding: 24px;
+
+    .detailData {
+        .position {
+            text-transform: capitalize;
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 1.5;
+            margin: 0;
+        }
+
+        .company {
+            color: hsla(0, 0%, 96%, 0.5);
+            text-transform: capitalize;
+            font-weight: 500;
+            line-height: 1.5;
+            font-size: 20px;
+        }
+
+        .content {
+            font-weight: 500;
+            line-height: 1.5;
+            font-size: 18px;
+        }
+
+        ul {
+            padding-left: 24px;
+            li {
+                font-size: 18px;
+                line-height: 1.5;
+                font-weight: 500;
+                list-style: disc;
+            }
+        }
+    }
+}

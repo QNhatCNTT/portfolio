@@ -1,0 +1,89 @@
+@import "@/assets/styles/global.scss";
+
+.parallax {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    scroll-margin: 140px;
+
+    .thumbnail {
+        width: 100%;
+        min-height: 100vh;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        scroll-margin: 140px;
+        background: linear-gradient(180deg, #11113250, #0c0c1d50);
+
+        span {
+            &.text {
+                font-size: 60px;
+                font-weight: 700;
+                text-align: center;
+
+                @include tablet {
+                    font-size: 80px;
+                }
+            }
+
+            &.description {
+                font-size: 30px;
+                font-weight: 700;
+                text-align: center;
+
+                @include tablet {
+                    font-size: 40px;
+                }
+
+                &.experience {
+                    font-size: 60px;
+                }
+            }
+        }
+
+        .mountains {
+            background-image: url("/thumbnail/mountains.png");
+            background-size: contain;
+            background-position: bottom;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            z-index: 3;
+
+            @include tablet {
+                background-size: cover;
+            }
+        }
+        .planets {
+            background-size: contain;
+            background-position: bottom;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            z-index: 2;
+            @include tablet {
+                background-size: cover;
+            }
+        }
+        .stars {
+            background-image: url("/thumbnail/stars.png");
+            background-size: cover;
+            background-position: bottom;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            z-index: 1;
+        }
+    }
+}

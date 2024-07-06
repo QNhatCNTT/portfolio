@@ -1,0 +1,102 @@
+@import "@/assets/styles/global.scss";
+
+.bannerContainer {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-flow: column;
+    gap: 3vw;
+    padding: 100px 24px 30px;
+
+    background: linear-gradient(180deg, #0c0c1d50, #11113250);
+
+    @include tablet {
+        padding: 100px 70px 30px;
+    }
+
+    .topBanner {
+        display: block;
+        margin: 0 auto;
+        .title {
+            padding: 2vw 3vw;
+            span {
+                font-size: 60px;
+                font-weight: 900;
+                line-height: normal;
+
+                &.styling {
+                    color: transparent;
+                    background-clip: text;
+                    --tw-gradient-to: #06b6d4;
+                    --tw-gradient-from: #a855f7;
+                    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+                    background-image: linear-gradient(to right, var(--tw-gradient-stops));
+                }
+            }
+        }
+    }
+
+    .bottomBanner {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .leftBanner,
+    .rightBanner {
+        width: 100%;
+        height: 100%;
+    }
+
+    .leftBanner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1vw;
+        text-align: start;
+        min-width: 300px;
+
+        .author {
+            font-size: 30px;
+            line-height: 1.5;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: rebeccapurple;
+            letter-spacing: 10px;
+        }
+
+        .role {
+            font-size: 60px;
+            line-height: 1.5;
+            font-weight: 700;
+        }
+
+        .scrollIcon {
+            height: 50px;
+            width: 50px;
+        }
+    }
+
+    .rightBanner {
+        opacity: 1;
+        transform: none;
+    }
+
+    .slidingTextContainer {
+        position: absolute;
+        font-size: 50vh;
+        bottom: -140px;
+        white-space: nowrap;
+        color: #ffffff09;
+        width: 50%;
+        font-weight: bold;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .rightBanner {
+        display: none;
+    }
+}

@@ -1,0 +1,47 @@
+@import "@/assets/styles/global.scss";
+.sectionContainer {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+    scroll-margin: 80px;
+
+    .containerItem {
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    .heading {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .title,
+        .counter {
+            font-size: 60px;
+            font-weight: 700;
+            text-align: center;
+
+            @include tablet {
+                font-size: 80px;
+            }
+        }
+
+        .description {
+            font-size: 30px;
+        }
+    }
+
+    .experience {
+        position: relative;
+        padding: 0 24px;
+    }
+
+    .lastExperience {
+        padding: 0 24px 85px;
+    }
+}
