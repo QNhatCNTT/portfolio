@@ -7,6 +7,10 @@ const dmSans = DM_Sans({ subsets: ["latin"] });
 export const metadata = {
     title: "Portfolio",
     description: "My Portfolio of Dang Nhat",
+    keywords: ["portfolio", "portfolio nextjs", "portfolio nextjs framer motion"],
+    openGraph: {
+        images: 'https://photos.sphereshowcase.com/tBJczsgyzUAP3woETDr31.jpg',
+      },
 };
 
 export default function RootLayout({ children }) {
