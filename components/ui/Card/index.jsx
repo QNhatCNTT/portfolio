@@ -60,9 +60,10 @@ export default function CardExperience({
                                     animate={isInView ? "visible" : "hidden"}
                                     variants={imageVariants}
                                     src={`/images/${t}.png`}
+                                    alt="tech-image"
                                     transition={{ delay: (i + 1) * 0.3 }}
-                                    height={50}
-                                    width={50}
+                                    height={60}
+                                    width={60}
                                 />
                             ))}
                         </div>
